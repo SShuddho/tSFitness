@@ -15,14 +15,12 @@
         .bgimage {
             /* The image used */
             background-image: url("bg.jpg");
-
-            /* Full height */
-            height: 100%;
-
-            /* Center and scale the image nicely */
+            /* height: 100%; */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            max-width:100%;
+            height:auto;
         }
 
         .fcon {
@@ -58,19 +56,19 @@
             color: #5cb85c;
         }
 
-        @media (max-width: 600px){
-            .fcon{
+        @media (max-width: 600px) {
+            .fcon {
                 width: 75vw;
                 margin: 100px auto;
                 /* padding: 15px 20px 15px 5px;
                 margin: 15px 10px 15px 15px; */
             }
-            
+
         }
     </style>
 </head>
 
-<body class="bgimage img-fluid">
+<body class="bgimage">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-weight-bold">
         <a class="navbar-brand pr-5" href="#"><img width="65" src="logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
